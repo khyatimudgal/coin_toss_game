@@ -1,15 +1,35 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <body>
-    <button onclick=" guess = 'HEADS', play(), console.log(score)"> Heads </button>
-    <button onclick=" guess = 'TAILS', play(), console.log (score)"> Tails </button>
-
-    <button onclick="score.Wins= 0, score.Lose = 0, localStorage.clear, console.log(score)">Clear Score</button>
-
-    <script src = 'coin_toss.js'></script>
-
-  </body>
-
-
-
+  <title>Coin Toss</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="coin_toss.css">
 </head>
+<body>
+
+  <h1>Coin Toss</h1>
+
+  <div id="buttons">
+    <button onclick="guess = 'HEADS', play()">Heads</button>
+    <button onclick="guess = 'TAILS', play()">Tails</button>
+    <button id="clear-btn" onclick="clearScore()">Clear Score</button>
+  </div>
+
+  <div id="coin">?</div>
+
+  <div id="result-message"></div>
+
+  <div id="streak"></div>
+
+  <div id="score-board">
+    <span>Wins: <span id="wins">0</span></span>
+    <span>Losses: <span id="losses">0</span></span>
+  </div>
+
+  <div id="keyboard-hint">[ H ] Heads &nbsp;&nbsp; [ T ] Tails &nbsp;&nbsp; [ C ] Clear</div>
+
+  <script src="coin_toss.js"></script>
+
+</body>
+</html>
