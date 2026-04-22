@@ -1,16 +1,31 @@
-# Coin Toss
+# 🪙 coin toss
 
-A neon-styled coin toss game built with vanilla HTML, CSS, and JavaScript.
-Pick Heads or Tails, watch the coin flip, and track your score across sessions.
+a neon-styled coin toss game built with vanilla html, css, and javascript.
+pick heads or tails, watch the coin flip, and track your score.
 
-## Features
+&nbsp;
 
-- Animated coin flip on every guess
-- Win streak counter for consecutive wins
-- Persistent scoreboard using localStorage
-- Neon dark theme with animated background
+&nbsp;
 
-## Technologies Used
+---
+
+✦ preview
+
+![coin toss preview](./screenshot.png)
+
+---
+
+✦ features
+
+- 🪙 animated coin flip on every guess
+- 🔥 win streak counter for consecutive wins
+- 💾 persistent scoreboard using localStorage
+- ⌨️ keyboard shortcuts — [ H ] Heads  [ T ] Tails  [ C ] Clear
+- 🌌 neon dark theme with animated background
+
+---
+
+✦ built with
 
 - HTML5 / CSS3 / JavaScript
 - Google Fonts — Orbitron
