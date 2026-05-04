@@ -17,7 +17,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Animated grid background - layer 1 (small, fast) */
 body::before {
   content: '';
   position: fixed;
@@ -33,7 +32,6 @@ body::before {
   z-index: -1;
 }
 
-/* Animated grid background - layer 2 (large, slow) + vignette */
 body::after {
   content: '';
   position: fixed;
@@ -60,7 +58,6 @@ body::after {
   100% { background-position: -130px 130px, -130px 130px, center; }
 }
 
-/* Floating orbs */
 h1::before,
 h1::after {
   content: '';
@@ -101,7 +98,6 @@ h1::after {
   100% { transform: translate(-60px, -50px); }
 }
 
-/* Background flash */
 body.win-flash {
   animation: winFlash 0.6s ease;
 }
@@ -188,7 +184,6 @@ button:active {
   box-shadow: 0 0 15px #ff4d4d, 0 0 40px #ff4d4d;
 }
 
-/* Coin */
 #coin {
   width: 110px;
   height: 110px;
@@ -214,7 +209,6 @@ button:active {
   100% { transform: rotateY(720deg); }
 }
 
-/* Result message */
 #result-message {
   font-size: 1.3rem;
   letter-spacing: 2px;
@@ -231,7 +225,6 @@ button:active {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Win streak */
 #streak {
   font-size: 1rem;
   letter-spacing: 2px;
@@ -241,7 +234,6 @@ button:active {
   margin-bottom: 30px;
 }
 
-/* Score board */
 #score-board {
   display: flex;
   gap: 50px;
@@ -265,7 +257,6 @@ button:active {
   font-weight: bold;
 }
 
-/* Keyboard hint */
 #keyboard-hint {
   font-size: 0.65rem;
   color: rgba(255, 255, 255, 0.3);
@@ -273,7 +264,6 @@ button:active {
   margin-top: 20px;
 }
 
-/* Responsive */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;

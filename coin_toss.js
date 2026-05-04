@@ -16,11 +16,10 @@ function play() {
   const message = document.getElementById('result-message')
   const streakEl = document.getElementById('streak')
 
-  // Start coin flip
   message.textContent = ''
   message.className = ''
   coin.classList.remove('flipping')
-  void coin.offsetWidth // reflow to restart animation
+  void coin.offsetWidth
   coin.classList.add('flipping')
 
   setTimeout(() => {
@@ -41,11 +40,9 @@ function play() {
       flashBackground('lose')
     }
 
-    // Fade in result message
     void message.offsetWidth
     message.classList.add('fade-in')
 
-    // Win streak
     if (winStreak >= 2) {
       streakEl.textContent = `${winStreak} wins in a row!`
     } else {
